@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Robot Controller</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="robot_url">Robot URL</string>
+    <string name="connect">Connect</string>
+    <string name="takeOff">Take Off</string>
+    <string name="land">Land</string>
+    <string name="port">Port</string>
+    <string name="stop">Stop</string>
+    <string name="title_activity_control">ControlActivity</string>
+    <string name="control_robot">Control the Robot</string>
+    <string name="title_activity_robots">Robots</string>
+    <string name="hello_robot">Hello Robot!</string>
+    <string name="add_new">Add New Robot</string>
+    <string name="delete_robot">Delete Robot</string>
+    <string name="speed">Speed</string>
+    <string name="angular">Angular S</string>
+    <string name="title_activity_login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_register">Login / Register</string>
+    <string name="continue_without_login">Continue Without Login</string>
+    <string name="forgot_username_password"><u> Forgot Username/Password</u></string>
+    <string name="android_logo">android logo</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_forgot_password">Forgot Username/Password </string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="submit">Submit</string>
+
+    <array name="security_questions">
+        <item name="question1">What\'s the name of your first pet?</item>
+        <item name="question2">What\'s your mother\'s maiden name?</item>
+        <item name="question3">What\'s your favorite color?</item>
+        <item name="question4">In which city where you born?</item>
+        <item name="question5">What was your childhood nickname?</item>
+    </array>
+
+    <string name="title_activity_test">TestActivity</string>
+    <string name="logout">Logout</string>
+    <string name="confirm_pass">Confirm Password</string>
+    <string name="set_new_pass">Set New Password</string>
+    <string name="answer2">Answer Security Question 2</string>
+    <string name="sec2">Security Question 2</string>
+    <string name="answer1">Answer Security Question 1</string>
+    <string name="sec1">Security Question 1</string>
+    <string name="new_pass">New Password</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="reset_password">Reset My Password</string>
+    <string name="title_activity_add_robot">Add Robot</string>
+    <string name="new_robot">New Robot</string>
+    <string name="robot_name">Robot Name</string>
+    <string name="ipAddress">IP Address</string>
+    <string name="url_address">URL Address</string>
+    <string name="_255">255</string>
+    <string name="speed_settings">Speed Settings</string>
+    <string name="max">Max</string>
+    <string name="default_vel">Default</string>
+    <string name="min">Min</string>
+    <string name="angular_settings">Angular Speed Settings</string>
+
+</resources>

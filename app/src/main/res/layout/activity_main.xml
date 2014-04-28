@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gabilheri.robotcontroller.robotcontroller.MainActivity"
+    android:weightSum="1"
+    >
+    <com.gabilheri.rosbridgecontroller.app.VideoStreamClasses.MjpegView
+        android:id="@+id/mv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        >
+        <Space
+            android:layout_weight="0.1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/topLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.3"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+
+            <Button
+                android:id="@+id/takeOff"
+                android:layout_weight="0.1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/arrow_up_button"
+                android:onClick="doCommand"
+            />
+
+            <Space
+                android:layout_weight="0.8"
+                android:layout_width="0dip"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/land"
+                android:layout_weight="0.1"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/arrow_down_button"
+                android:onClick="doCommand"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="0.6"
+            android:baselineAligned="false"
+            >
+            <LinearLayout
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/joystickLayoutLinear"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:background="@drawable/joystick_bg"
+                />
+                <SeekBar
+                    android:id="@+id/seekBarVel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                 />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.285"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:weightSum="1"
+                >
+             <Space
+                 android:layout_weight="0.6"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dip" />
+
+            <Button
+                android:id="@+id/stop"
+                android:layout_weight="0.3"
+                android:layout_width="wrap_content"
+                android:layout_height="0dip"
+                android:background="@drawable/stop_button"
+                android:layout_gravity="center_horizontal"
+                android:onClick="doCommand"
+            />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="0.35"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal|center_vertical"
+                >
+                <RelativeLayout
+                    android:id="@+id/joystickLayoutAngular"
+                    android:layout_width="150dip"
+                    android:layout_height="150dip"
+                    android:background="@drawable/joystick_bg"
+                    />
+                <SeekBar
+                    android:id="@+id/seekBarAngular"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_vertical_margin"
+                    android:progress="0"
+                />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

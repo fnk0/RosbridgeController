@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    tools:context="com.gabilheri.rosbridgecontroller.app.TestActivity"
+    android:layout_height="fill_parent"
+    android:id="@+id/mainLayout"
+    >
+    <com.gabilheri.rosbridgecontroller.app.VideoStreamClasses.MjpegView
+        android:id="@+id/mv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+    />
+</FrameLayout>
