@@ -57,9 +57,10 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         robotController = getIntent().getExtras().getParcelable("robotController");
-        //cameraUrl = "http://139.78.141.250:8080/stream?topic=/camera/rgb/image_color";
+        //cameraUrl = "http://139.78.141.251:8080/stream?topic=/camera/rgb/image_color";
+        cameraUrl = "http://139.78.141.251:8080/stream?topic=/ardrone/image_raw";
         Log.d("Camera URL: ", robotController.getStreamUrl());
-        cameraUrl = robotController.getStreamUrl();
+        //cameraUrl = robotController.getStreamUrl();
 
         joystickLayoutLinear = (RelativeLayout) findViewById(R.id.joystickLayoutLinear);
         joystickLinear = new Joystick (getApplicationContext(), joystickLayoutLinear, R.drawable.joystick);
